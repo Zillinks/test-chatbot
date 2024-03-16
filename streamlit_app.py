@@ -14,7 +14,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 
-openai_api_key = st.secrets["OPENAI"]["API_KEY"]
+openai_api_key = st.secrets.OPENAI_API_KEY
 
 def main():
     st.set_page_config(
